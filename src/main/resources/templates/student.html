@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Development</title>
+    <link th:href="@{/style1.css}" rel="stylesheet" />
+</head>
+<body>
+<h1>Students Group 4462</h1>
+
+<table>
+    <tr>
+        <th>STUDENT NAME</th>
+        <th>STUDENT LAST NAME</th>
+        <th>SPECIALIZATION</th>
+    </tr>
+    <tr th:each="s: ${students}" >
+        <td th:text="${s.name}"></td>
+        <td th:text="${s.lname}"></td>
+        <td th:text="${s.special}"></td>
+    </tr>
+</table>
+
+<h3>ADD STUDENT</h3>
+<form action="/students" method="post">
+    Name: <input type="text" name="name"><br />
+    Last Name: <input type="text" name="lname"><br />
+    Specialization: <input type="textr" name="special"><br />
+    <button type="submit">Add student</button>
+</form>
+</body>
+</html>

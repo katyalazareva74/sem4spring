@@ -1,0 +1,44 @@
+html{
+    background: #fcf4a3;
+}
+h1 {
+    text-align: center;
+    color: blue;
+    }
+h3{
+    color: blue;
+}
+table,
+th, td{
+    border:2px solid black;
+    border-collapse: collapse;
+        }
+td{
+    background:  #7fffd4;
+    font-size: 25px;
+}
+
+table {
+    background: #7fffd4;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    table-align: center;
+    }
+form{
+    color: blue;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+}
+button{
+    background: yellow;
+    color: blue;
+    font-size: 25px;
+}
+input{
+    background: #7fffd4;
+    font-size: 20px;
+}
+
